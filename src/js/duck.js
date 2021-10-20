@@ -2,6 +2,7 @@
 const ADD_ARTICLE = "ADD_ARTICLE";
 
 // Reducer
+// Always remember: the state in redux comes from reducers.
 const initialState = {
   articles: []
 };
