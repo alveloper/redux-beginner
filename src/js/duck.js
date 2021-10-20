@@ -1,7 +1,7 @@
 // Action types
-const ADD_ARTICLE = "ADD_ARTICLE";
+export const ADD_ARTICLE = "ADD_ARTICLE";
 
-// Reducer
+// Reducer: which makes the state in Redux
 // Always remember: the state in redux comes from reducers.
 const initialState = {
   articles: []
@@ -17,6 +17,8 @@ export default function rootReducer(state = initialState, action) {
 }
 
 // Action creators
+// Actions: plain JavaScript objects, acting as messengers in your application
+// Action creators: functions for creating those messages.
 export function addArticle(payload) {
   return { type: ADD_ARTICLE, payload }
 };
